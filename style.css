@@ -1,0 +1,25 @@
+.color {
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 5px;
+}
+
+#color-palette {
+    padding-left: 0;
+} 
+
+.quadroPixels {
+    display: inline-grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.pixels {
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+}
+
