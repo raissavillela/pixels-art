@@ -6,17 +6,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="onLoad()">
     <main>
         <header>
             <h1 id="title">Paleta de Cores</h1>
             <ul id="color-palette">
-                <li class="color" onclick="changeClass(this)"></li>
-                <li class="color" onclick="changeClass(this)"></li>
-                <li class="color" onclick="changeClass(this)"></li>
-                <li class="color" onclick="changeClass(this)"></li>
+                <li class="color" onclick="selectColor(this)"></li>
+                <li class="color" onclick="selectColor(this)"></li>
+                <li class="color" onclick="selectColor(this)"></li>
+                <li class="color" onclick="selectColor(this)"></li>
             </ul>
         </header>
+
+        <div style="padding: 0px 0px 0px 75px;">
+            <input type="number" id="board-size" min="1"></input><br/><br/>
+            <button id="generate-board" onclick="generateBoard()">VQV</button><br/><br/>
+            <button id="clear-board" onclick="cleanBoard()">Limpar</button><br/><br/>
+            <button id="button-random-color" onclick="randomColors()">Cores aleatórias</button><br/><br/>
+        </div>
+    
         <div id="pixel-board" class="quadroPixels"> 
         </div>
     
